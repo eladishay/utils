@@ -1,0 +1,9 @@
+[Unit]
+Description=Create partition, XFS filesystem and mount
+
+[Service]
+type=idle
+ExecStart=/usr/local/bin/make-disk.sh
+
+[Install]
+WantedBy=default.target
